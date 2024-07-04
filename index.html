@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title> Password Generater</title>
+    </head>
+    <body>
+        <div class = "container">
+        <h1>Generate a</h1>
+        <h1 id = "t2">random password</h1>
+        <p> Never use an insecure password again.</p>
+
+        <form onsubmit="return false">
+            
+            <input type = "checkbox" id = "symbol" name = "symbol" value = "symbol">
+            <label for = "symbol">Symbols</label>
+            <br>
+            <input type = "checkbox" id = "num" name = "symbol" value = "numbers">
+            <label for = "num">Numbers</label>
+            <br>
+            <input type = "number" id = "length" name = "length" min = "6" max = "32" required>
+            <label for = "length">Length </label>
+            <br>
+            <button type = "submit" onclick="generate()" id = "btn-0"> Generate password</button>
+        </form>
+
+        <hr></hr>
+        <button id = "btn-1"></button>
+        <button id = "btn-2"></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
