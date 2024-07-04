@@ -31,3 +31,11 @@ function generate() {
     pass2.textContent = password.slice(len).join("")
 
 }
+function copy(text){
+   navigator.clipboard.writeText(text).then(()=>{
+    alert("password copied to clipboard")
+   })
+   .catch(err =>{
+    console.error('error')
+   })
+}
